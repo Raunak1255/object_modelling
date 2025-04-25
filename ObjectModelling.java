@@ -1,6 +1,6 @@
 import java.util.*;
 
-// Enum for ball colors
+// Enum for ball colors (meaning that:- a class that represent a group of constant[unchangable variavle like final variable])
 enum Color {
     RED, YELLOW, GREEN;
 }
@@ -13,7 +13,7 @@ class Ball {
         this.color = color;
     }
 }
-
+// here I create a Bag class
 class Bag {
     final int capacity = 12;
     int yCount = 0;
@@ -24,7 +24,7 @@ class Bag {
     List<Ball> balls = new ArrayList<>();
 
     boolean add(Ball ball) {
-        // Bag is full
+        // If Bag is full
         if (totalCount >= capacity) {
             return false;
         }
@@ -66,9 +66,9 @@ public class ObjectModelling {
         Ball ball3 = new Ball(Color.GREEN);
         Ball ball4 = new Ball(Color.YELLOW);
 
-        System.out.println(bag.add(ball1)); // false
-        System.out.println(bag.add(ball2)); // true
-        System.out.println(bag.add(ball4)); // true
-        System.out.println(bag.add(ball3)); // true
+        System.out.println(bag.add(ball1)); 
+        System.out.println(bag.add(ball2)); 
+        System.out.println(bag.add(ball4)); 
+        System.out.println(bag.add(ball3)); 
     }
 }
